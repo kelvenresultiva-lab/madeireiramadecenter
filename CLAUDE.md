@@ -24,7 +24,7 @@ Site institucional de madeireira, marca provisória Essência Madeiras. Continue
 - Menu expansível no celular com aria-expanded e fechamento ao selecionar uma seção ou apertar Escape.
 - Botões de orçamento abrem o mesmo diálogo.
 - Cards abrem diálogo de produto e permitem preparar cotação da linha escolhida.
-- Formulário de orçamento ENVIA PARA O WHATSAPP da empresa (wa.me/553132208948, número fixo com WhatsApp Business confirmado pelo usuário em 13/11): campos nome, bairro/cidade (opcional) e materiais; abre o WhatsApp com a mensagem pronta.
+- Botões de orçamento (cabeçalho, hero, FAQ, rodapé, "cotação" das linhas/madeiras) abrem DIRETO o WhatsApp da empresa (wa.me/553132208948, fixo com WhatsApp Business confirmado em 13/11), SEM formulário — função openQuote(). Com madeira/linha, a mensagem cita o nome. O diálogo #contact-modal ficou no HTML mas não é mais aberto.
 - FAQ usa details/summary.
 - Rotas e mapa aguardam endereço real; não inventar localização funcional.
 - Contatos do rodapé são fictícios e estão identificados como ilustrativos. Não atribuir um perfil ou número real sem dados do usuário.

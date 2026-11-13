@@ -597,17 +597,15 @@ const quoteForm = document.querySelector('#contact-form');
 const quoteSuccess = document.querySelector('#form-success');
 let selectedProduct = '';
 let lastSuggestedMessage = '';
+// Botões de orçamento abrem direto o WhatsApp da empresa (sem formulário).
+const WHATSAPP_EMPRESA = '553132208948';
 function openQuote(product = '') {
-  if (quoteForm.hidden) {
-    quoteForm.reset();
-    quoteForm.hidden = false;
-    quoteSuccess.hidden = true;
-  }
-  if (product && (!quoteForm.elements.message.value.trim() || quoteForm.elements.message.value === lastSuggestedMessage)) {
-    lastSuggestedMessage = 'Linha de interesse: ' + product + '\nMedidas: \nQuantidades: ';
-    quoteForm.elements.message.value = lastSuggestedMessage;
-  }
-  contactModal.showModal();
+  const texto = product
+    ? 'Olá, Madecenter! Vim pelo site e gostaria de um orçamento de ' + product + '.'
+    : 'Olá, Madecenter! Vim pelo site e gostaria de um orçamento.';
+  const link = 'https://wa.me/' + WHATSAPP_EMPRESA + '?text=' + encodeURIComponent(texto);
+  const aba = window.open(link, '_blank', 'noopener');
+  if (!aba) window.location.href = link;
 }
 document.querySelectorAll('.project').forEach(card => {
   card.addEventListener('click', () => {
