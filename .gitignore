@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+.claude/
+
+# Fotos antigas do template (não usadas pelo site)
+assets/architect-faq-reference-v2.jpg
+assets/architect-faq.jpg
+assets/corporate-*.jpg
+assets/facade.jpg
+assets/hero-reference-v2.jpg
+assets/kitchen.jpg
+assets/living.jpg
+assets/office.jpg

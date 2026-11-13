@@ -1,0 +1,5 @@
+# Arquivos só do servidor local (localhost:8972). Na Vercel o site é estático:
+# se o server.mjs for enviado, a Vercel roda o servidor Node e ele não acha o index.html.
+server.mjs
+CLAUDE.md
+IMAGENS.md
